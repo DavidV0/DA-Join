@@ -24,7 +24,6 @@
   gap: 10px;
   height: 48px;
   width: 300px;
-  padding-left: 12px;
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -139,7 +138,7 @@
   width: 24px;
   border: none;
   position: absolute;
-  right: 0px;
+  right: 60px;
   top: 14px;
   cursor: pointer;
 }
@@ -149,7 +148,7 @@
   width: 24px;
   border: none;
   position: absolute;
-  right: 0px;
+  right: 60px;
   top: 14px;
   cursor: pointer;
 }
@@ -160,8 +159,8 @@
 #sign-in-email-input {
   background-size: 24px;
   font-family: "Inter";
+  width: 360px;
   height: 48px;
-  width: 422px;
   border-radius: 10px;
   padding-left: 12px;
   font-size: 20px;
@@ -239,20 +238,23 @@
   align-items: center;
   text-align: center;
 }
-
-#email-in-use {
-  position: absolute;
-  top: 20px !important;
-  left: 42% !important;
-  border-radius: 10px;
+#email-in-use{
+  display: flex;
+  width: 312px;
+  height: 74px;
+  border-radius: 8px;
   background-color: #2a3647;
-  color: red;
-  height: 40px;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
+  color: white;
+  font-size: 21px;
   font-weight: 700;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 40% !important;
   opacity: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .fading-out {
@@ -293,15 +295,19 @@
     height: 700px;
     width: 400px;
     margin: 30px;
+  }
+
+  #email-in-use{
+    left: 30% !important;
 
   }
+
 
   #sign-in-name,
   #sign-in-email-input, 
   #sign-in-password-input,
   #confirm-password-input {
-    width: auto;
-    margin-left: 70px;
+    margin-left: 10px;
   }
 
 
@@ -309,7 +315,7 @@
   #confirm-img-lock {
     position: absolute;
     top: 25%;
-    right: 75px;
+    right: 50px;
   }
 
   .sign-in-headline {
@@ -317,7 +323,7 @@
   }
 
   .sing-in-login-checkbox-container {
-  padding-left: 60px;
+  padding-left: 20px;
   }
 
   .arrow {
@@ -334,23 +340,12 @@
   #sign-in-name {
     background-image: none;
   }
-  #email-in-use {
-    position: absolute;
-    left: 30px !important;
-    top: 10px;
-  }
 }
 
-/* @media (max-width: 550px) {
   #sign-in-container {
     height: 700px;
     width: 400px;
-    padding-left: 20px;
-  }
-  #email-in-use {
-    position: absolute;
-    left: 20px !important;
-    top: 10px !important;
+    padding-left: 40px;
   }
 
   .header-box {
@@ -363,10 +358,12 @@
 
   #sign-up-button {
     z-index: 999;
+    height: 80px;
+    font-size: 20px;
   }
 
   .sing-in-login-checkbox-container {
-    padding-left: 80px;
+    margin-left: 10px;
   }
   
   .arrow {
@@ -374,50 +371,32 @@
  padding-left: 0px !important;
   }
 
-  .input-field-container {
-    width: auto;
-  }
-
 #sign-in-name {
   background-image: none;
 }
 
-  #sign-up-container {
-    position: absolute;
-    left: 100px;
-    top: 800px;
+ @media (max-width: 550px) {
+  .input-field-container {
+    height: 286px;
+    width: 350px;
   }
 
+  #sign-in-container {
+    padding-left: 0;
+    margin: 0;
+    height: 500px;
+    width: 310px;
+  }
   #sign-in-name,
   #sign-in-email-input, 
   #sign-in-password-input,
   #confirm-password-input {
+    margin-left: 30px;
+    padding-left: 0;
     width: 290px;
-    margin-left: 90px;
-    position:relative;
   }
-
   #sign-in-img-lock,
   #confirm-img-lock {
-    position: absolute;
-    top: 25%;
-    right: 130px;
+    right: 40px;
   }
-} */
-
-@media (max-width: 450px) {
-  #sign-in-container {
-    height: 700px;
-    width: 300px;
-    margin-left: 30px;
-  }
-  .arrow {
-    padding-left: 70px;
-     }
-     
-  #email-in-use {
-    position: absolute;
-    left: 0px;
-    top: 10;
-  }
-}
+ }

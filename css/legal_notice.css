@@ -41,3 +41,27 @@
 .legal-notice-text-highlight {
   color: #29abe2;
 }
+
+@media (max-width: 900px) {
+ 
+  .legal-notice-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .legal-notice-h2 {
+    font-size: 36px;
+    justify-content: center;
+    text-align: center;
+  }
+  .legal-notice-arrow {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+  }
+  .legal-notice-head {
+    font-size: 36px;
+    justify-content: center;
+    text-align: center;
+  }
+}
